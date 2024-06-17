@@ -1,0 +1,139 @@
+- Python基础
+  
+  - 语法
+    - 变量
+      - 变量命名规则
+        - 变量名必须以字母或下划线开头
+        - 变量名可以包含字母、数字和下划线
+        - 变量名区分大小写
+      - 变量赋值与类型自动推断
+        - 直接赋值：`x = 10`
+        - 多变量赋值：`a, b, c = 1, 2, 3`
+        - 类型推断：根据赋值内容自动确定变量类型
+    - 数据类型
+      - 数字
+        - 整数（int）：如`5`
+        - 浮点数（float）：如`3.14`
+        - 复数（complex）：如`1 + 2j`
+      - 字符串
+        - 创建：单引号或双引号：`'hello'`或`"hello"`
+        - 多行字符串：三重引号：`'''hello'''`或`"""hello"""`
+        - 字符串方法：`upper()`, `lower()`, `replace()`, `find()`
+      - 布尔值
+        - True和False
+        - 布尔运算：`and`, `or`, `not`
+      - None类型
+        - 表示空值：`x = None`
+    - 运算符
+      - 算术运算符
+        - 加法：`+`
+        - 减法：`-`
+        - 乘法：`*`
+        - 除法：`/`
+        - 取余：`%`
+      - 赋值运算符
+        - 赋值：`=`
+        - 加赋值：`+=`
+        - 减赋值：`-=`
+      - 比较运算符
+        - 等于：`==`
+        - 不等于：`!=`
+        - 大于：`>`
+        - 小于：`<`
+        - 大于等于：`>=`
+        - 小于等于：`<=`
+      - 逻辑运算符
+        - 与：`and`
+        - 或：`or`
+        - 非：`not`
+  - 控制流
+    - 条件语句
+      - if语句
+        - 语法：`if condition:`
+        - 示例：`if x > 0: print("Positive")`
+      - elif语句
+        - 语法：`elif condition:`
+        - 示例：`elif x == 0: print("Zero")`
+      - else语句
+        - 语法：`else:`
+        - 示例：`else: print("Negative")`
+    - 循环
+      - for循环
+        - 语法：`for item in iterable:`
+        - 示例：`for i in range(5): print(i)`
+      - while循环
+        - 语法：`while condition:`
+        - 示例：`while x > 0: x -= 1`
+      - break和continue语句
+        - break：跳出循环
+        - continue：跳过当前迭代，继续下一次循环
+  - 函数
+    - 定义和调用
+      - 使用`def`关键字定义：`def function_name(parameters):`
+      - 示例：`def greet(name): return f"Hello, {name}"`
+    - 参数和返回值
+      - 位置参数：按顺序传递
+      - 关键字参数：使用`key=value`形式传递
+      - 默认参数值：`def func(x, y=10):`
+      - 可变参数：`*args`用于位置参数，`**kwargs`用于关键字参数
+    - 递归
+      - 递归函数的定义：函数调用自身
+      - 基例与递归条件：避免无限递归
+      - 应用示例：计算阶乘
+        - 示例：`def factorial(n): return 1 if n == 0 else n * factorial(n-1)`
+
+- 数据结构
+  
+  - 列表
+    - 列表的创建与访问
+      - 创建：`lst = [1, 2, 3]`
+      - 访问元素：`lst[0]`
+      - 切片：`lst[1:3]`
+    - 列表方法
+      - `append(item)`：添加元素到末尾
+      - `extend(iterable)`：扩展列表
+      - `insert(index, item)`：在指定位置插入元素
+      - `remove(item)`：移除第一个匹配的元素
+      - `pop([index])`：移除并返回指定位置的元素
+      - `sort()`：排序列表
+      - `reverse()`：反转列表
+    - 列表推导式
+      - 示例：`[x**2 for x in range(10) if x % 2 == 0]`
+  - 元组
+    - 元组的创建与访问
+      - 创建：`tpl = (1, 2, 3)`
+      - 单元素元组：`tpl = (1,)`
+      - 访问元素：`tpl[0]`
+    - 元组不可变性
+      - 元组内容不能更改
+    - 使用场景
+      - 返回多个值：`def func(): return 1, 2`
+  - 字典
+    - 字典的创建与访问
+      - 创建：`d = {'key1': 'value1', 'key2': 'value2'}`
+      - 访问元素：`d['key1']`
+    - 字典方法
+      - `keys()`：返回所有键
+      - `values()`：返回所有值
+      - `items()`：返回所有键值对
+      - `get(key, default)`：获取键对应的值
+      - `update([other])`：更新字典
+      - `pop(key)`：移除并返回指定键的值
+    - 字典推导式
+      - 示例：`{x: x**2 for x in range(5)}`
+  - 集合
+    - 集合的创建与访问
+      - 创建：`s = {1, 2, 3}`
+      - 添加元素：`s.add(4)`
+      - 移除元素：`s.remove(2)`
+    - 集合操作
+      - 并集：`a | b`
+      - 交集：`a & b`
+      - 差集：`a - b`
+    - 集合方法
+      - `add(item)`：添加元素
+      - `remove(item)`：移除元素
+      - `pop()`：移除并返回一个元素
+      - `clear()`：清空集合
+    - 不可变集合
+      - 创建：`fs = frozenset([1, 2, 3])`
