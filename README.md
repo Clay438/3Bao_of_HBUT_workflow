@@ -48,8 +48,9 @@
 
 - 一旦完成markdown格式的mindmap，将该文件以markdown格式导入Xmind，导出为png
 
-<img src="pic/a.png" alt="a" style="zoom:50%;" />
-<img src="pic/c.png" alt="c" style="zoom:50%;" />
+<div align="center"><img width="350px" src="pic/a.png"></img></div>
+
+<div align="center"><img width="350px" src="pic/c.png"></img></div>
 
 - 利用pandoc将png转换为pdf
 
