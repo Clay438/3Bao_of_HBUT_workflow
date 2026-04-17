@@ -56,7 +56,7 @@
 
 ### 文献阅读：
 
-[谷歌学术](https://scholar.google.com)//（未完成）
+在教学区的校园网环境下，利用学校提供的[访问入口](https://itc.hbut.edu.cn/info/1037/1692.htm)，使用[谷歌学术](https://scholar.google.com)导出引文。//（未完成）
 
 ### 每科三问：
 
