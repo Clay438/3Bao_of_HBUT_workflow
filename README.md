@@ -46,13 +46,11 @@
   - 集合
 ```
 
-- 一旦完成markdown格式的mindmap，将该文件以markdown格式导入Xmind，导出为png
+- 一旦完成markdown格式的mindmap，将该文件以markdown格式导入Xmind，导出为pdf
 
 <div align="center"><img width="350px" src="pic/a.png"></img></div>
 
 <div align="center"><img width="350px" src="pic/c.png"></img></div>
-
-- 利用pandoc将png转换为pdf
 
 ### 文献阅读：
 
